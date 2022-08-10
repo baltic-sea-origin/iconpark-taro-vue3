@@ -1,5 +1,6 @@
 <template>
   <image
+    class="icon-park"
     :style="{
       width: '1em',
       height: '1em'
