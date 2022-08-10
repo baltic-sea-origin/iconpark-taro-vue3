@@ -1,6 +1,6 @@
 {
   "name": "iconpark-taro-vue",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "lib/index",
   "module": "lib/index.js",
   "description": "icon-park with taro vue3",

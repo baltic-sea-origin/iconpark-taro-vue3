@@ -23,7 +23,7 @@ const props = defineProps({
   },
   fill: {
     type: [Array, String] as PropType<string | string[]>,
-    default: "#000000"
+    default: "currentColor"
   }
 });
 const iconProps: IIconProps = {
