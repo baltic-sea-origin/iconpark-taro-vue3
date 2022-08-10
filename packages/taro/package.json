@@ -1,0 +1,42 @@
+{
+  "name": "@iconpark-taro-vue3/taro",
+  "version": "0.0.1",
+  "main": "lib/index",
+  "module": "lib/index.js",
+  "description": "icon-park with taro vue3",
+  "sideEffects": false,
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "compile:icon": "rimraf -rf ./dist && ts-node --project ./tsconfig.build.json ./src/index.ts",
+    "clean": "rimraf -rf ./lib",
+    "copy": "copyfiles -u 1 dist/icons/* lib/",
+    "compile": "yarn clean && tsc --project ./tsconfig.json",
+    "build": "yarn compile:icon && yarn compile && yarn copy",
+    "prepublishOnly": "yarn run compile"
+  },
+  "homepage": "http://iconpark.bytedance.com/",
+  "keywords": [
+    "icon",
+    "icon pack",
+    "IconPark",
+    "svg",
+    "mini program"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@icon-park/svg": "^1.3.5",
+    "svg64": "^1.1.0",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@iconpark-taro-vue3/core": "^0.0.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}

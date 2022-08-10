@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "strict": true,
+    "sourceMap": false,
+    "declaration": true,
+    "declarationMap": false,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noEmit": false,
+    "typeRoots": ["../../types", "./node_modules/@types"],
+    "baseUrl": "./"
+  }
+}
