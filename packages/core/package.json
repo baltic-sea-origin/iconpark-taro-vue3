@@ -31,5 +31,6 @@
     "copyfiles": "^2.4.1",
     "ts-lib": "^0.0.5",
     "typescript": "^4.4.4"
-  }
+  },
+  "gitHead": "9a7e72e8f97057ea896a445a2834839d776f1d15"
 }
