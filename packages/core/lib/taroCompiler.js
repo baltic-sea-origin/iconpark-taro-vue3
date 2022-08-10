@@ -68,7 +68,7 @@ var path_1 = require("path");
 var mkdirp_1 = __importDefault(require("mkdirp"));
 var fs_1 = require("fs");
 var taroCodeGen = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var filterNames, iconNames, baseUrl, iconsUrl, made, i, iconName, renderCode, mapCode;
+    var filterNames, iconNames, baseUrl, iconsUrl, i, iconName, renderCode, mapCode;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
@@ -77,7 +77,7 @@ var taroCodeGen = function () { return __awaiter(void 0, void 0, void 0, functio
                 console.log("\u5F00\u59CB\u7F16\u8BD1, \u5171".concat(iconNames.length, "\u4E2A\u6587\u4EF6"));
                 baseUrl = (0, path_1.join)(__dirname, "../../taro/dist");
                 iconsUrl = (0, path_1.join)(baseUrl, './icons');
-                made = mkdirp_1.default.sync(iconsUrl);
+                mkdirp_1.default.sync(iconsUrl); // create path
                 i = 0;
                 _a.label = 1;
             case 1:
