@@ -1,5 +1,5 @@
 {
-  "name": "@iconpark-taro-vue3/taro",
+  "name": "iconpark-taro-vue3",
   "version": "0.0.1",
   "main": "lib/index",
   "module": "lib/index.js",
